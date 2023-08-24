@@ -1,0 +1,13 @@
+// @import "../../variable.scss";
+.header {
+    color: $theme-color;
+    // color: red;
+    // 测试postcss
+    text-decoration: dashed;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
