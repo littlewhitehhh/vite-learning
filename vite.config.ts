@@ -16,6 +16,10 @@ import autoprefixer from "autoprefixer";
 // windicss 接入
 import windi from "vite-plugin-windicss";
 
+
+// eslint
+import ViteEslint from 'vite-plugin-eslint'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   // 手动指定项目根目录位置
@@ -43,5 +47,5 @@ export default defineConfig({
       ],
     },
   },
-  plugins: [vue(), windi()],
+  plugins: [vue(), windi(),ViteEslint()],
 });
