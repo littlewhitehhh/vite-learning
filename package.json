@@ -10,12 +10,7 @@
 		"lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./src",
 		"prettier": "prettier --write",
 		"prepare": "husky install",
-		"lint:lint-staged": {
-			"*.{vue,js,jsx,ts,tsx}": [
-				"pnpm run lint",
-				"git add ."
-			]
-		}
+		"lint:lint-staged": "lint-staged"
 	},
 	"dependencies": {
 		"vue": "^3.3.4"
