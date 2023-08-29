@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
-import Header from './components/Header/index.vue';
-import HeaderWindi from './components/Header/indexWindi.vue';
+import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header/indexHeader.vue'
+import HeaderWindi from './components/Header/indexWindi.vue'
 
 // const testProp = 'sss';
 </script>

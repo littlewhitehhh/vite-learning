@@ -10,22 +10,20 @@ module.exports = {
         'eslint:recommended',
         // 这个到底是那里的? 暂时不清楚啊
         // "standard-with-typescript",
-        'plugin:vue/vue3-essential',
+        'plugin:vue/vue3-essential'
         // 1. 接入 prettier 的规则
-        'prettier',
-        'plugin:prettier/recommended'
+        // 'prettier',
+        // 'plugin:prettier/recommended'
     ],
-    overrides: [
-        {
-            env: {
-                node: true
-            },
-            files: ['.eslintrc.{js,cjs}'],
-            parserOptions: {
-                sourceType: 'script'
-            }
+    overrides: [{
+        env: {
+            node: true
+        },
+        files: ['.eslintrc.{js,cjs}'],
+        parserOptions: {
+            sourceType: 'script'
         }
-    ],
+    }],
     parserOptions: {
         parser: '@typescript-eslint/parser', // ts不报错
         ecmaVersion: 'latest',
@@ -35,14 +33,14 @@ module.exports = {
     plugins: [
         'vue',
         // 这个也是自己添加的
-        '@typescript-eslint',
+        '@typescript-eslint'
         // 2. 接入 prettier的插件
-        'prettier'
+        // 'prettier'
     ],
     rules: {
         // 3. 注意要加上这一句，开启 prettier 自动修复的功能
-        'prettier/prettier': 'error',
-        quotes: ['error', 'single'],
-        semi: ['error', 'always']
+        // 'prettier/prettier': 'error',
+        // quotes: ['error', 'single'],
+        // semi: ['error', 'always']
     }
-};
+}
